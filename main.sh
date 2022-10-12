@@ -60,7 +60,7 @@ $binary config keyring-backend os
 #====================================================
 
 #===========ДОБАВЛЕНИЕ GENESIS.JSON===============
-wget -O $HOME/$folder/config/genesis.json https://raw.githubusercontent.com/DecentralCardGame/Testnet/main/genesis.json
+wget -O $HOME/$WORK_FOLDER/config/genesis.json https://raw.githubusercontent.com/DecentralCardGame/Testnet/main/genesis.json
 DENOM=`cat $HOME/$WORK_FOLDER/config/genesis.json | grep denom -m 1 | tr -d \"\, | sed "s/denom://" | tr -d \ `
 echo 'export DENOM='${DENOM} >> /root/.bashrc
 #=================================================
