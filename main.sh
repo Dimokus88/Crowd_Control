@@ -45,6 +45,7 @@ wget https://github.com/DecentralCardGame/Cardchain/releases/download/v0.81/Card
 tar xzf Cardchain_latest_linux_amd64.tar.gz
 chmod 775 Cardchaind
 binary=Cardchaind
+echo 'export binary='${binary} >> /root/.bashrc
 sudo mv Cardchaind /usr/local/bin/
 sudo rm Cardchain_latest_linux_amd64.tar.gz
 $binary version
