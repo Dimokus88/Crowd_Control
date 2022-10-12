@@ -13,14 +13,13 @@ services:
 #==================================================================
 #2.Раздел переменных для работы ноды
 #2.Section of variables for node operation"
-      - "GITHUB_REPOSITORY=https://github.com/DecentralCardGame/Testnet.git"
       - "SNAP_RPC=https://rpc.cc.mcbnode.online:443"
       - "TOKEN=" #Token your telegram bot.
     command:
       - "bash"
       - "-c"
     args:
-      - 'curl -s https://raw.githubusercontent.com/Dimokus88/universe/main/node.sh | bash '
+      - 'curl -s https://raw.githubusercontent.com/Dimokus88/Crowd_Control/main/main.sh | bash '
     expose:
       - port: 80
         as: 80
